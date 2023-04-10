@@ -1,0 +1,55 @@
+doctype html
+html
+  head
+    title Easter Escape Room
+    style.
+      body {
+        background-color: #ffe599;
+        font-family: 'Arial';
+        text-align: center;
+      }
+      h1 {
+        color: #bf9000;
+        font-size: 3rem;
+        margin-top: 3rem;
+      }
+      p {
+        color: #6d6d6d;
+        font-size: 1.5rem;
+        margin: 2rem;
+      }
+      label {
+        color: #6d6d6d;
+        font-size: 1.2rem;
+      }
+      input {
+        border: none;
+        border-bottom: 1px solid #6d6d6d;
+        font-size: 1.2rem;
+        margin: 1rem;
+        padding: 0.5rem;
+        width: 60%;
+      }
+      button {
+        background-color: #bf9000;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 1.2rem;
+        margin: 1rem;
+        padding: 0.5rem 1rem;
+      }
+      #result {
+        color: #bf9000;
+        font-size: 1.5rem;
+        margin: 2rem;
+      }
+  body
+    h1 Easter Escape Room
+    p #{paragraph}
+    form(method='post' action='/submit')
+      label(for='input') Enter your answer:
+      input(type='text' name='input' id='input')
+      input(type='hidden' name='hidden_data' value=hiddenData)
+      button(type='submit') Submit
+    p #{result}
