@@ -17,7 +17,7 @@ app.set('view engine', 'jade');
 app.use('/', indexRouter);
 
 app.post('/submit', (req, res) => {
-  const answer = req.body.input;
+  const answer = req.body.input.toLowerCase();
   var hiddenData = req.body.hidden_data;
   var paragraph =  `Whats the answer to unlock door ${hiddenData}?`;
 
