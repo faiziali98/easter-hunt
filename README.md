@@ -18,6 +18,8 @@ npm start
 door-2 to door-8 are locked with encryption. The keys of the next door will be revealed on front end once correct answer is provided. 
 All the doors are encrypted with some cryptic algorithm.
 
+NOTE: All the answers are case sensitive. Only use small case letters to give the answers.
+
 ## Reveal the algorithm
 
 Your first puzzle is to know the algorithm used to encrypt the text files in each door.
